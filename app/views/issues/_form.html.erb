@@ -1,0 +1,37 @@
+<%= bootstrap_form_for(@issue) do |f| %>
+  <%= f.text_field :subject %>
+  <%= f.text_area :description %>
+  <div class="input-group date" id="datetime">
+    <%= f.date_field :due_date, append: raw('<i class="fa fa-calendar"></i>') %>
+  <!--span class="input-group-addon"><i class="fa fa-trash-o"></i></span-->
+</div>
+  <%= f.fields_for :custom_field_values do |ff| %>
+    <%= ff.text_field 1, label: "Evidence Type" %>
+    <%= ff.text_field 2, label: "Name" %>
+    <%= ff.text_field 3, label: "E-mail" %>
+    <%= ff.text_field 4, label: "Phone" %>
+    <%= ff.text_field 5, label: "Committee" %>
+    <div class="input-group date" id="datetime2">
+      <%= ff.date_field 6, label: "Preferred Date", append: raw('<i class="fa fa-calendar"></i>') %>
+    </div>
+  <% end %>
+  <%= f.primary 'Submit Request' %>
+<% end %>
+
+<script>
+function dateize(div_id) {
+  $(div_id).datetimepicker({
+    icons: {
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-arrow-up",
+      down: "fa fa-arrow-down",
+      next: "fa fa-arrow-right",
+      previous: "fa fa-arrow-left"
+    },
+    format: "YYYY-MM-DD"
+  });
+}
+dateize('#datetime');
+dateize('#datetime2');
+</script>

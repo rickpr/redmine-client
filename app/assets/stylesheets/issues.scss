@@ -1,0 +1,62 @@
+// Place all the styles related to the issues controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#before_default_2 {
+  float: left;
+  width: 684px;
+}
+#before_default_3 {
+  float: right;
+  width: 208px;
+}
+#before_default_4 {
+  clear: both;
+}
+
+#dept_header {
+  height:auto;
+}
+
+#dept_logo {
+  margin:0;
+}
+
+
+#horizontal-navigation {
+  clear:both;    
+
+}
+
+
+#content_top {
+  display: none;
+}
+
+#container {
+  padding-top: 10px;
+}
+
+.data-graphics {
+  border: 3px solid silver;
+  width: 320px;
+  margin: 100px;
+  float: right;
+  padding: 20px;
+  background-color: rgba(193, 0, 55,.75);
+  color:#fff;
+}
+
+.data-graphic {display:none;}
+
+.data-graphics .number {
+  font-size: 3.5em;
+  line-height: 1;
+}
+
+.data-graphics .data {
+  font-size: 1.25em;
+  line-height: 1;
+}
+.data-graphics .data-icon {
+  font-size: 5em;
+}

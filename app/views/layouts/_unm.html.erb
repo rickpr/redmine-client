@@ -1,0 +1,109 @@
+<script>
+$(document).ready(function(){   
+
+    $('#dept_header').parallax({ speed : 0.15});
+
+    });
+</script>
+
+
+<div id="page">
+  <div id="dept_header">
+    <div id="dept_logo"><div id="header"><a href="index.html"><img alt="unm logo" height="80" src="<%= asset_url('unm-logo.png') %>" width="236" /></a></div></div>
+    <div class="container">
+      <div class="data-graphics">
+        <div class="media data-graphic">
+          <div class="media-left"> <span class="data-icon pull-left fa fa-graduation-cap"> </span></div>
+          <div class="media-body"><span class="number"> <span class="numscroller count" data-delay="3" data-increment="1" data-max="200" data-min="0">200</span>+</span><br /> <span class="data"> degree programs</span></div>
+        </div>
+        <div class="media data-graphic">
+          <div class="media-left"> <span class="data-icon pull-left fa fa-desktop"> </span> </div>
+          <div class="media-body"><span class="number"> <span class="numscroller count" data-delay="3" data-increment="1" data-max="27" data-min="0">27</span></span><br /> <span class="data">online degrees</span></div>
+        </div>
+        <div class="media data-graphic">
+          <div class="media-left"><span class="data-icon pull-left fa fa-group"> </span> </div>
+          <div class="media-body"><span class="number"> <span class="numscroller count" data-delay="3" data-increment="1" data-max="438" data-min="0">438</span></span><br /> <span class="data">student organizations</span></div>
+        </div>
+        <div class="media data-graphic">
+          <div class="data-icon media-left"> <span class="pull-left fa fa-user"> </span> </div>
+          <div class="media-body"><span class="number"> <span class="numscroller count" data-delay="3" data-increment="1" data-max="165000" data-min="0">165,000</span></span><br /> <span class="data">alumni in the US</span></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">// 
+$(function() {    
+    var random = Math.floor(Math.random() * $('.data-graphic').length);
+    $('.data-graphic').hide().eq(random).show();
+    });
+// </script>
+    <div id="horizontal-navigation"><ul id="dropnav"><li><a class="current" href="index.html">Home</a></li><li><a href="accreditation.html">Accreditation</a></li><li><a href="process.html">Process</a></li><li><a class=" submenu" href="criteria-for-accreditation/criterion-one-mission.html">Criteria for Accreditation</a><ul><li><a href="criteria-for-accreditation/criterion-one-mission.html">1. Mission</a></li><li><a href="criteria-for-accreditation/criterion-two-integrity.html">2. Integrity</a></li><li><a href="criteria-for-accreditation/criterion-three.html">3. Teaching and Learning</a></li><li><a href="criteria-for-accreditation/criterion-four.html">4. Teaching and Learning</a></li><li><a href="criteria-for-accreditation/criterion-five.html">5. Resources, Planning, and Institutional Effectiveness</a></li></ul></li><li><a class=" submenu" href="committees/index.html">Committees</a><ul><li><a href="committees/index.html">Steering Committee</a></li><li><a href="committees/criterion-team-leadership.html">Criterion Team Leadership</a></li><li><a href="committees/resource-team.html">Resource Team </a></li></ul></li><li><a href="timeline.html">Timeline</a></li></ul></div>
+  </div>
+  <div class="fullwidth" id="container">
+    <div id="primary_aside">
+      <div class="content">
+        <div id="primary_aside_1" ></div>
+        <div id="primary_aside_2" ></div>
+        <div id="primary_aside_3" ></div>
+        <div id="primary_aside_4" ></div>
+      </div>
+    </div>
+
+    <div id="content_top">
+      <div class="content">
+        <ul id="unm_breadcrumbs"><li class="unm_home"><a href="http://www.unm.edu">UNM</a></li><li><span class="breadcrumb-div">&gt;</span>Home</li></ul>
+
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="content">
+        <div id="before_default_1" ></div>
+        <div id="before_default_2" ></div>
+        <div id="before_default_3" ></div>
+        <div id="before_default_4" ></div> 
+        <%= yield %>
+        <div id="after_default_1" ></div>
+        <div id="after_default_2" ></div>
+        <div id="after_default_3" ></div>
+        <div id="after_default_4" ></div>
+      </div>
+    </div>
+    <div id="secondary_aside">
+      <div class="content">
+        <div id="secondary_aside_1" ></div>
+        <div id="secondary_aside_2" ></div>
+        <div id="secondary_aside_3" ></div>
+        <div id="secondary_aside_4" ></div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-6">
+          <h3><a href="index.html">Office of Academic Affairs<br /></a></h3>
+          <br />
+          <p class="adr"><span class="extended-address">MSC05 3400</span><br /><span class="extended-address">1 University of New Mexico</span><br /><span class="extended-address">Albuquerque</span>,&#160;<abbr class="region" title="New Mexico">NM</abbr>&#160;<span class="extended-address">87131</span></p>
+          <br />
+          <p><strong>Physical Location:</strong><br /><span class="extended-address">Scholes Hall<br />Room #240</span></p>
+          <br />
+          <p><span class="tel">Phone:&#160;<span class="tel">(505) 277-2611</span><br /></span><span class="tel">Fax:&#160;<span class="tel">(505) 277-8700<span class="tel" ></span></span><br /></span><a href="mailto:provost@unm.edu">provost@unm.edu</a></p>
+        </div>
+        <div class="col-md-6" ></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-6">
+          <p>&#169; The University of New Mexico, Albuquerque, NM 87131, (505) 277-0111 <br /> New Mexico's Flagship University</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline pull-right" id="unm_footer_links">
+            <li><a href="http://www.unm.edu/accessibility.html">Accessibility</a></li>
+            <li><a href="http://www.unm.edu/legal.html">Legal</a></li>
+            <li><a href="http://www.unm.edu/contactunm.html">Contact UNM</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
